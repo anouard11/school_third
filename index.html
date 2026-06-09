@@ -1,243 +1,511 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أسباب ودوافع الظاهرة - محاربة التدخين والمخدرات</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-dark-1: #0A0018;
-            --bg-dark-2: #120021;
-            --neon-cyan: #00D9FF;
-            --neon-pink: #FF008A;
-            --text-white: #FFFFFF;
-            --text-gray: #CFCFCF;
-        }
-        body {
-            background: linear-gradient(135deg, var(--bg-dark-1) 0%, var(--bg-dark-2) 100%);
-            color: var(--text-white);
-            font-family: 'Cairo', sans-serif;
-            min-height: 100vh;
-            margin: 0;
-            overflow-x: hidden;
-        }
-        /* Neon Container Effects */
-        @keyframes subtle-breathe {
-            0% {
-                box-shadow: 0 0 20px rgba(0, 217, 255, 0.1), inset 0 0 20px rgba(255, 0, 138, 0.05);
-                border-color: rgba(0, 217, 255, 0.2);
-            }
-            100% {
-                box-shadow: 0 0 40px rgba(0, 217, 255, 0.2), inset 0 0 30px rgba(255, 0, 138, 0.1);
-                border-color: rgba(255, 0, 138, 0.3);
-            }
-        }
-        .presentation-card {
-            background: rgba(10, 0, 24, 0.6);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            animation: subtle-breathe 4s infinite alternate ease-in-out;
-        }
-        /* Text Glow Effects */
-        .glow-text-cyan {
-            text-shadow: 0 0 10px rgba(0, 217, 255, 0.6), 0 0 20px rgba(0, 217, 255, 0.3);
-        }
-        .glow-text-pink {
-            text-shadow: 0 0 10px rgba(255, 0, 138, 0.6), 0 0 20px rgba(255, 0, 138, 0.3);
-        }
-        /* Ambient Lights */
-        .ambient-light-1 {
-            position: fixed;
-            top: -10%;
-            left: -10%;
-            width: 50vw;
-            height: 50vw;
-            background: radial-gradient(circle, rgba(0, 217, 255, 0.08) 0%, transparent 70%);
-            z-index: -1;
-        }
-        .ambient-light-2 {
-            position: fixed;
-            bottom: -10%;
-            right: -10%;
-            width: 60vw;
-            height: 60vw;
-            background: radial-gradient(circle, rgba(255, 0, 138, 0.06) 0%, transparent 70%);
-            z-index: -1;
-        }
-        /* Custom list styling for bullets */
-        .neon-list li {
-            position: relative;
-            padding-right: 1.5rem;
-            margin-bottom: 0.75rem;
-        }
-        .neon-list li::before {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 0.6rem;
-            width: 0.5rem;
-            height: 0.5rem;
-            background-color: var(--neon-pink);
-            border-radius: 50%;
-            box-shadow: 0 0 8px var(--neon-pink);
-        }
-        /* Image styling to fit the theme */
-        img {
-            border-radius: 0.5rem;
-            border: 1px solid rgba(0, 217, 255, 0.1);
-            background: rgba(255, 255, 255, 0.02);
-            padding: 0.25rem;
-            transition: all 0.3s ease;
-        }
-        img:hover {
-            border-color: rgba(0, 217, 255, 0.4);
-            box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
-        }
-    </style>
-</head>
-<body class="relative px-4 py-12 antialiased">
-    <div class="ambient-light-1 rounded-full pointer-events-none"></div>
-    <div class="ambient-light-2 rounded-full pointer-events-none"></div>
-    <main class="presentation-card w-full max-w-5xl mx-auto rounded-[2rem] p-8 md:p-12 relative z-10">
-        <h1 class="text-[#00D9FF] text-4xl md:text-5xl font-extrabold mb-12 text-center glow-text-cyan leading-tight border-b border-[rgba(0,217,255,0.2)] pb-6">
-            أسباب ودوافع هذه الظاهرة:
-        </h1>
-        <div class="space-y-16">
-            <!-- Article 1 -->
-            <section class="bg-[rgba(0,0,0,0.2)] p-6 md:p-8 rounded-2xl border border-[rgba(255,255,255,0.05)] relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-2 h-full bg-[#00D9FF] shadow-[0_0_15px_#00D9FF]"></div>
-                <div class="flex justify-center mb-8">
-                    <img src="taba.webp" alt="Article 1" class="w-full md:w-3/4 object-contain hover:scale-105 transform duration-300">
-                </div>
-                <h2 class="text-[#00D9FF] text-2xl md:text-3xl font-bold mb-4 glow-text-cyan" dir="ltr" style="text-align: right;">
-                    Tabagisme aux collèges publics de Casablanca
-                </h2>
-                <div class="grid md:grid-cols-2 gap-6 mt-6">
-                    <div class="space-y-6">
-                        <div>
-                            <h3 class="text-[#FF008A] text-xl font-bold mb-2">ملخص:</h3>
-                            <p class="text-[#CFCFCF] leading-relaxed bg-[rgba(255,0,138,0.03)] p-4 rounded-lg border-r-2 border-[#FF008A]">
-                                دراسة تُظهر انتشار التدخين بين تلاميذ الإعدادي في الدار البيضاء (7.5%) وارتباطه القوي بتعاطي المخدرات.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="text-[#FF008A] text-xl font-bold mb-2">الفئة العمرية المستهدفة:</h3>
-                            <p class="text-[#FFFFFF] bg-[rgba(255,255,255,0.05)] p-3 rounded-lg inline-block">
-                                المراهقون (حوالي 11–18 سنة، متوسط 16 سنة)
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-[#00D9FF] text-xl font-bold mb-4">الأسباب والدوافع:</h3>
-                        <ul class="neon-list text-[#CFCFCF] text-lg space-y-2">
-                            <li>رفقة السوء</li>
-                            <li>مشاكل نفسية</li>
-                            <li>الرغبة في نسيان المشاكل</li>
-                            <li>مشاكل اجتماعية</li>
-                            <li>الشعور بالفراغ</li>
-                            <li>البحث عن الاسترخاء</li>
-                            <li>إثبات الرجولة</li>
-                            <li>الفضول والتجربة</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!-- Article 2 -->
-            <section class="bg-[rgba(0,0,0,0.2)] p-6 md:p-8 rounded-2xl border border-[rgba(255,255,255,0.05)] relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-2 h-full bg-[#FF008A] shadow-[0_0_15px_#FF008A]"></div>
-                <div class="flex justify-center mb-8">
-                    <img src="stat.png" alt="Article 2" class="w-full md:w-3/4 object-contain hover:scale-105 transform duration-300">
-                </div>
-                <h2 class="text-[#FF008A] text-2xl md:text-3xl font-bold mb-4 glow-text-pink" dir="ltr" style="text-align: right;">
-                    Prevalence and correlates of substance use in Settat Province
-                </h2>
-                <div class="grid md:grid-cols-2 gap-6 mt-6">
-                    <div class="space-y-6">
-                        <div>
-                            <h3 class="text-[#00D9FF] text-xl font-bold mb-2">ملخص:</h3>
-                            <p class="text-[#CFCFCF] leading-relaxed bg-[rgba(0,217,255,0.03)] p-4 rounded-lg border-r-2 border-[#00D9FF]">
-                                دراسة تبيّن انتشار استهلاك المواد المخدرة بين تلاميذ سطات وعلاقته بعوامل اجتماعية ونفسية ومدرسية.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="text-[#00D9FF] text-xl font-bold mb-2">الفئة العمرية المستهدفة:</h3>
-                            <p class="text-[#FFFFFF] bg-[rgba(255,255,255,0.05)] p-3 rounded-lg inline-block">
-                                12–20 سنة (إعدادي وثانوي)
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-[#FF008A] text-xl font-bold mb-4">الأسباب والعوامل:</h3>
-                        <ul class="neon-list text-[#CFCFCF] text-lg space-y-2">
-                            <li>ضغط الأقران (الأصدقاء)</li>
-                            <li>الرغبة في الاسترخاء والتكيف مع الضغط</li>
-                            <li>النزاعات العائلية وضعف الرقابة الأبوية</li>
-                            <li>الضغوط الدراسية</li>
-                            <li>سهولة الوصول إلى المواد</li>
-                            <li>العيش في بيئة حضرية أو داخلية</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!-- Article 3 -->
-            <section class="bg-[rgba(0,0,0,0.2)] p-6 md:p-8 rounded-2xl border border-[rgba(255,255,255,0.05)] relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-2 h-full bg-[#00D9FF] shadow-[0_0_15px_#00D9FF]"></div>
-                <div class="flex justify-center mb-8">
-                    <img src="attitudes.png" alt="Article 3" class="w-full md:w-3/4 object-contain hover:scale-105 transform duration-300">
-                </div>
-                <h2 class="text-[#00D9FF] text-2xl md:text-3xl font-bold mb-4 glow-text-cyan" dir="ltr" style="text-align: right;">
-                    Evolution of attitudes and smoking trends in Gharb Region (2010–2015)
-                </h2>
-                <div class="grid md:grid-cols-2 gap-6 mt-6">
-                    <div class="space-y-6">
-                        <div>
-                            <h3 class="text-[#FF008A] text-xl font-bold mb-2">ملخص:</h3>
-                            <p class="text-[#CFCFCF] leading-relaxed bg-[rgba(255,0,138,0.03)] p-4 rounded-lg border-r-2 border-[#FF008A]">
-                                دراسة تقارن تطور التدخين بين التلاميذ، وتُظهر زيادة في التدخين رغم ارتفاع الوعي بأضراره.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="text-[#FF008A] text-xl font-bold mb-2">الفئة العمرية المستهدفة:</h3>
-                            <p class="text-[#FFFFFF] bg-[rgba(255,255,255,0.05)] p-3 rounded-lg inline-block">
-                                10–20 سنة (إعدادي وثانوي)
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-[#00D9FF] text-xl font-bold mb-4">الأسباب والعوامل:</h3>
-                        <ul class="neon-list text-[#CFCFCF] text-lg space-y-2">
-                            <li>ضغط الأصدقاء</li>
-                            <li>تأثير الوالدين والأخوة المدخنين</li>
-                            <li>التدخين السلبي داخل المنزل</li>
-                            <li>أسباب نفسية (الاسترخاء والتوتر)</li>
-                            <li>عوامل اجتماعية واقتصادية</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!-- Reddit Screenshots -->
-            <section>
-                <h2 class="text-[#FF008A] text-2xl md:text-3xl font-bold mb-6 glow-text-pink flex items-center gap-3">
-                    <span class="w-2 h-8 bg-[#FF008A] rounded-full shadow-[0_0_10px_#FF008A]"></span>
-                    صور إضافية (لقطات من Reddit)
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[rgba(0,0,0,0.2)] p-6 rounded-2xl border border-[rgba(255,255,255,0.05)]">
-                    <img src="red_1.png" alt="Reddit Screenshot 1" class="w-full object-contain mx-auto hover:scale-105 transform duration-300">
-                    <img src="re.png" alt="Reddit Screenshot 2" class="w-full object-contain mx-auto hover:scale-105 transform duration-300">
-                </div>
-            </section>
-        </div>
+`<!DOCTYPE html>`
 
-        <!-- Next Page Section -->
-        <div class="mt-16 pt-8 border-t border-[rgba(0,217,255,0.2)] text-center">
-            <p class="text-[#CFCFCF] text-xl font-bold mb-4">الصفحة التالية:</p>
-            <a href="https://anouard11.github.io/school-last/" target="_blank" class="inline-block text-[#00D9FF] text-lg md:text-xl glow-text-cyan hover:text-[#FF008A] transition-colors duration-300 bg-[rgba(0,217,255,0.05)] py-3 px-6 rounded-xl border border-[rgba(0,217,255,0.2)] hover:border-[#FF008A]" dir="ltr">
-                https://anouard11.github.io/school-last/
-            </a>
-        </div>
-    </main>
-</body>
-</html>
+`<html lang="ar" dir="rtl">`
+
+`<head>`
+
+    `<meta charset="UTF-8">`
+
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+    `<title>أسباب ودوافع الظاهرة - محاربة التدخين والمخدرات</title>`
+
+    `<script src="https://cdn.tailwindcss.com"></script>`
+
+    `<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">`
+
+    `<style>`
+
+        `:root {`
+
+            `--bg-dark-1: #0A0018;`
+
+            `--bg-dark-2: #120021;`
+
+            `--neon-cyan: #00D9FF;`
+
+            `--neon-pink: #FF008A;`
+
+            `--text-white: #FFFFFF;`
+
+            `--text-gray: #CFCFCF;`
+
+        `}`
+
+  
+
+        `body {`
+
+            `background: linear-gradient(135deg, var(--bg-dark-1) 0%, var(--bg-dark-2) 100%);`
+
+            `color: var(--text-white);`
+
+            `font-family: 'Cairo', sans-serif;`
+
+            `min-height: 100vh;`
+
+            `margin: 0;`
+
+            `overflow-x: hidden;`
+
+        `}`
+
+  
+
+        `/* Neon Container Effects */`
+
+        `@keyframes subtle-breathe {`
+
+            `0% {`
+
+                `box-shadow: 0 0 20px rgba(0, 217, 255, 0.1), inset 0 0 20px rgba(255, 0, 138, 0.05);`
+
+                `border-color: rgba(0, 217, 255, 0.2);`
+
+            `}`
+
+            `100% {`
+
+                `box-shadow: 0 0 40px rgba(0, 217, 255, 0.2), inset 0 0 30px rgba(255, 0, 138, 0.1);`
+
+                `border-color: rgba(255, 0, 138, 0.3);`
+
+            `}`
+
+        `}`
+
+  
+
+        `.presentation-card {`
+
+            `background: rgba(10, 0, 24, 0.6);`
+
+            `backdrop-filter: blur(20px);`
+
+            `-webkit-backdrop-filter: blur(20px);`
+
+            `border: 1px solid rgba(0, 217, 255, 0.2);`
+
+            `animation: subtle-breathe 4s infinite alternate ease-in-out;`
+
+        `}`
+
+  
+
+        `/* Text Glow Effects */`
+
+        `.glow-text-cyan {`
+
+            `text-shadow: 0 0 10px rgba(0, 217, 255, 0.6), 0 0 20px rgba(0, 217, 255, 0.3);`
+
+        `}`
+
+  
+
+        `.glow-text-pink {`
+
+            `text-shadow: 0 0 10px rgba(255, 0, 138, 0.6), 0 0 20px rgba(255, 0, 138, 0.3);`
+
+        `}`
+
+  
+
+        `/* Ambient Lights */`
+
+        `.ambient-light-1 {`
+
+            `position: fixed;`
+
+            `top: -10%;`
+
+            `left: -10%;`
+
+            `width: 50vw;`
+
+            `height: 50vw;`
+
+            `background: radial-gradient(circle, rgba(0, 217, 255, 0.08) 0%, transparent 70%);`
+
+            `z-index: -1;`
+
+        `}`
+
+  
+
+        `.ambient-light-2 {`
+
+            `position: fixed;`
+
+            `bottom: -10%;`
+
+            `right: -10%;`
+
+            `width: 60vw;`
+
+            `height: 60vw;`
+
+            `background: radial-gradient(circle, rgba(255, 0, 138, 0.06) 0%, transparent 70%);`
+
+            `z-index: -1;`
+
+        `}`
+
+  
+
+        `/* Custom list styling for bullets */`
+
+        `.neon-list li {`
+
+            `position: relative;`
+
+            `padding-right: 1.5rem;`
+
+            `margin-bottom: 0.75rem;`
+
+        `}`
+
+        `.neon-list li::before {`
+
+            `content: '';`
+
+            `position: absolute;`
+
+            `right: 0;`
+
+            `top: 0.6rem;`
+
+            `width: 0.5rem;`
+
+            `height: 0.5rem;`
+
+            `background-color: var(--neon-pink);`
+
+            `border-radius: 50%;`
+
+            `box-shadow: 0 0 8px var(--neon-pink);`
+
+        `}`
+
+        `/* Image styling to fit the theme */`
+
+        `img {`
+
+            `border-radius: 0.5rem;`
+
+            `border: 1px solid rgba(0, 217, 255, 0.1);`
+
+            `background: rgba(255, 255, 255, 0.02);`
+
+            `padding: 0.25rem;`
+
+            `transition: all 0.3s ease;`
+
+        `}`
+
+        `img:hover {`
+
+            `border-color: rgba(0, 217, 255, 0.4);`
+
+            `box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);`
+
+        `}`
+
+    `</style>`
+
+`</head>`
+
+`<body class="relative px-4 py-12 antialiased">`
+
+    `<div class="ambient-light-1 rounded-full pointer-events-none"></div>`
+
+    `<div class="ambient-light-2 rounded-full pointer-events-none"></div>`
+
+  
+
+    `<main class="presentation-card w-full max-w-5xl mx-auto rounded-[2rem] p-8 md:p-12 relative z-10">`
+
+        `<h1 class="text-[#00D9FF] text-4xl md:text-5xl font-extrabold mb-12 text-center glow-text-cyan leading-tight border-b border-[rgba(0,217,255,0.2)] pb-6">`
+
+            `أسباب ودوافع هذه الظاهرة:`
+
+        `</h1>`
+
+  
+
+        `<div class="space-y-16">`
+
+            `<!-- Article 1 -->`
+
+            `<section class="bg-[rgba(0,0,0,0.2)] p-6 md:p-8 rounded-2xl border border-[rgba(255,255,255,0.05)] relative overflow-hidden">`
+
+                `<div class="absolute top-0 right-0 w-2 h-full bg-[#00D9FF] shadow-[0_0_15px_#00D9FF]"></div>`
+
+                `<div class="flex justify-center mb-8">`
+
+                    `<img src="taba.png" alt="Article 1" class="w-full md:w-3/4 object-contain hover:scale-105 transform duration-300">`
+
+                `</div>`
+
+  
+
+                `<h2 class="text-[#00D9FF] text-2xl md:text-3xl font-bold mb-4 glow-text-cyan" dir="ltr" style="text-align: right;">`
+
+                    `Tabagisme aux collèges publics de Casablanca`
+
+                `</h2>`
+
+  
+
+                `<div class="grid md:grid-cols-2 gap-6 mt-6">`
+
+                    `<div class="space-y-6">`
+
+                        `<div>`
+
+                            `<h3 class="text-[#FF008A] text-xl font-bold mb-2">ملخص:</h3>`
+
+                            `<p class="text-[#CFCFCF] leading-relaxed bg-[rgba(255,0,138,0.03)] p-4 rounded-lg border-r-2 border-[#FF008A]">`
+
+                                `دراسة تُظهر انتشار التدخين بين تلاميذ الإعدادي في الدار البيضاء (7.5%) وارتباطه القوي بتعاطي المخدرات.`
+
+                            `</p>`
+
+                        `</div>`
+
+                        `<div>`
+
+                            `<h3 class="text-[#FF008A] text-xl font-bold mb-2">الفئة العمرية المستهدفة:</h3>`
+
+                            `<p class="text-[#FFFFFF] bg-[rgba(255,255,255,0.05)] p-3 rounded-lg inline-block">`
+
+                                `المراهقون (حوالي 11–18 سنة، متوسط 16 سنة)`
+
+                            `</p>`
+
+                        `</div>`
+
+                    `</div>`
+
+                    `<div>`
+
+                        `<h3 class="text-[#00D9FF] text-xl font-bold mb-4">الأسباب والدوافع:</h3>`
+
+                        `<ul class="neon-list text-[#CFCFCF] text-lg space-y-2">`
+
+                            `<li>رفقة السوء</li>`
+
+                            `<li>مشاكل نفسية</li>`
+
+                            `<li>الرغبة في نسيان المشاكل</li>`
+
+                            `<li>مشاكل اجتماعية</li>`
+
+                            `<li>الشعور بالفراغ</li>`
+
+                            `<li>البحث عن الاسترخاء</li>`
+
+                            `<li>إثبات الرجولة</li>`
+
+                            `<li>الفضول والتجربة</li>`
+
+                        `</ul>`
+
+                    `</div>`
+
+                `</div>`
+
+            `</section>`
+
+  
+
+            `<!-- Article 2 -->`
+
+            `<section class="bg-[rgba(0,0,0,0.2)] p-6 md:p-8 rounded-2xl border border-[rgba(255,255,255,0.05)] relative overflow-hidden">`
+
+                `<div class="absolute top-0 right-0 w-2 h-full bg-[#FF008A] shadow-[0_0_15px_#FF008A]"></div>`
+
+                `<div class="flex justify-center mb-8">`
+
+                    `<img src="stat.png" alt="Article 2" class="w-full md:w-3/4 object-contain hover:scale-105 transform duration-300">`
+
+                `</div>`
+
+  
+
+                `<h2 class="text-[#FF008A] text-2xl md:text-3xl font-bold mb-4 glow-text-pink" dir="ltr" style="text-align: right;">`
+
+                    `Prevalence and correlates of substance use in Settat Province`
+
+                `</h2>`
+
+  
+
+                `<div class="grid md:grid-cols-2 gap-6 mt-6">`
+
+                    `<div class="space-y-6">`
+
+                        `<div>`
+
+                            `<h3 class="text-[#00D9FF] text-xl font-bold mb-2">ملخص:</h3>`
+
+                            `<p class="text-[#CFCFCF] leading-relaxed bg-[rgba(0,217,255,0.03)] p-4 rounded-lg border-r-2 border-[#00D9FF]">`
+
+                                `دراسة تبيّن انتشار استهلاك المواد المخدرة بين تلاميذ سطات وعلاقته بعوامل اجتماعية ونفسية ومدرسية.`
+
+                            `</p>`
+
+                        `</div>`
+
+                        `<div>`
+
+                            `<h3 class="text-[#00D9FF] text-xl font-bold mb-2">الفئة العمرية المستهدفة:</h3>`
+
+                            `<p class="text-[#FFFFFF] bg-[rgba(255,255,255,0.05)] p-3 rounded-lg inline-block">`
+
+                                `12–20 سنة (إعدادي وثانوي)`
+
+                            `</p>`
+
+                        `</div>`
+
+                    `</div>`
+
+                    `<div>`
+
+                        `<h3 class="text-[#FF008A] text-xl font-bold mb-4">الأسباب والعوامل:</h3>`
+
+                        `<ul class="neon-list text-[#CFCFCF] text-lg space-y-2">`
+
+                            `<li>ضغط الأقران (الأصدقاء)</li>`
+
+                            `<li>الرغبة في الاسترخاء والتكيف مع الضغط</li>`
+
+                            `<li>النزاعات العائلية وضعف الرقابة الأبوية</li>`
+
+                            `<li>الضغوط الدراسية</li>`
+
+                            `<li>سهولة الوصول إلى المواد</li>`
+
+                            `<li>العيش في بيئة حضرية أو داخلية</li>`
+
+                        `</ul>`
+
+                    `</div>`
+
+                `</div>`
+
+            `</section>`
+
+  
+
+            `<!-- Article 3 -->`
+
+            `<section class="bg-[rgba(0,0,0,0.2)] p-6 md:p-8 rounded-2xl border border-[rgba(255,255,255,0.05)] relative overflow-hidden">`
+
+                `<div class="absolute top-0 right-0 w-2 h-full bg-[#00D9FF] shadow-[0_0_15px_#00D9FF]"></div>`
+
+                `<div class="flex justify-center mb-8">`
+
+                    `<img src="attitudes.png" alt="Article 3" class="w-full md:w-3/4 object-contain hover:scale-105 transform duration-300">`
+
+                `</div>`
+
+  
+
+                `<h2 class="text-[#00D9FF] text-2xl md:text-3xl font-bold mb-4 glow-text-cyan" dir="ltr" style="text-align: right;">`
+
+                    `Evolution of attitudes and smoking trends in Gharb Region (2010–2015)`
+
+                `</h2>`
+
+  
+
+                `<div class="grid md:grid-cols-2 gap-6 mt-6">`
+
+                    `<div class="space-y-6">`
+
+                        `<div>`
+
+                            `<h3 class="text-[#FF008A] text-xl font-bold mb-2">ملخص:</h3>`
+
+                            `<p class="text-[#CFCFCF] leading-relaxed bg-[rgba(255,0,138,0.03)] p-4 rounded-lg border-r-2 border-[#FF008A]">`
+
+                                `دراسة تقارن تطور التدخين بين التلاميذ، وتُظهر زيادة في التدخين رغم ارتفاع الوعي بأضراره.`
+
+                            `</p>`
+
+                        `</div>`
+
+                        `<div>`
+
+                            `<h3 class="text-[#FF008A] text-xl font-bold mb-2">الفئة العمرية المستهدفة:</h3>`
+
+                            `<p class="text-[#FFFFFF] bg-[rgba(255,255,255,0.05)] p-3 rounded-lg inline-block">`
+
+                                `10–20 سنة (إعدادي وثانوي)`
+
+                            `</p>`
+
+                        `</div>`
+
+                    `</div>`
+
+                    `<div>`
+
+                        `<h3 class="text-[#00D9FF] text-xl font-bold mb-4">الأسباب والعوامل:</h3>`
+
+                        `<ul class="neon-list text-[#CFCFCF] text-lg space-y-2">`
+
+                            `<li>ضغط الأصدقاء</li>`
+
+                            `<li>تأثير الوالدين والأخوة المدخنين</li>`
+
+                            `<li>التدخين السلبي داخل المنزل</li>`
+
+                            `<li>أسباب نفسية (الاسترخاء والتوتر)</li>`
+
+                            `<li>عوامل اجتماعية واقتصادية</li>`
+
+                        `</ul>`
+
+                    `</div>`
+
+                `</div>`
+
+            `</section>`
+
+  
+
+            `<!-- Reddit Screenshots -->`
+
+            `<section>`
+
+                `<h2 class="text-[#FF008A] text-2xl md:text-3xl font-bold mb-6 glow-text-pink flex items-center gap-3">`
+
+                    `<span class="w-2 h-8 bg-[#FF008A] rounded-full shadow-[0_0_10px_#FF008A]"></span>`
+
+                    `صور إضافية (لقطات من Reddit)`
+
+                `</h2>`
+
+                `<div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[rgba(0,0,0,0.2)] p-6 rounded-2xl border border-[rgba(255,255,255,0.05)]">`
+
+                    `<img src="red_1.png" alt="Reddit Screenshot 1" class="w-full object-contain mx-auto hover:scale-105 transform duration-300">`
+
+                    `<img src="red_2.png" alt="Reddit Screenshot 2" class="w-full object-contain mx-auto hover:scale-105 transform duration-300">`
+
+                `</div>`
+
+            `</section>`
+
+  
+
+        `</div>`
+
+    `</main>`
+
+  
+
+`</body>`
+
+`</html>`
